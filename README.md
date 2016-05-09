@@ -18,14 +18,14 @@
 
 ### Adding pull to refresh
 ```swift
-	tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
-	// prepend data to dataSource, insert cells at top of table view
-    // call [tableView.pullToRefreshView stopAnimating] when done
-  	}
+tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
+// prepend data to dataSource, insert cells at top of table view
+// call [tableView.pullToRefreshView stopAnimating] when done
+}
 ```
 
 ### Stop animating when done
-```objective-c
+```swift
 	tableView.pullRefreshView?.stopPullRefreshAnimation() 
 ```
 
@@ -38,13 +38,14 @@
  * CustomIndicator
 
 > use a CGPath indicator, you can rewrite CGPath in function: scrollBezierPath()
->```objective-c
+
+```swift
 >		func scrollBezierPath(progress: CGFloat) -> CGPath {
        // return a CGPath whatever you like
     }
 ```
 ###other changeable property in code
-```objective-c
+```swift
 		 //MARK: - define refresh view height -
 		private let PullRefreshViewHeight: CGFloat = 70
     	//MARK: - define lineWidth -
