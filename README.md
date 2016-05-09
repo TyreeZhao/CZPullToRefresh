@@ -3,7 +3,6 @@
 ```swift
 public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
-#UIScrollView extension for pulling to refresh.
 
 ##Installation
  * Drag the CZPullToRefresh floder in your project
