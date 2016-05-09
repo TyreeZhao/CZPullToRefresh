@@ -1,5 +1,5 @@
 # CZPullToRefresh
-  These `UIScrollView` categories makes it super easy to add pull-to-refresh  to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing UIViewController, CZPullToRefresh uses the Objective-C runtime to add the following methods to UIScrollView:
+  These `UIScrollView` categories makes it super easy to add pull-to-refresh  to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing `UIViewController`, CZPullToRefresh uses the Objective-C runtime to add the following methods to` UIScrollView`:
 ```objective-c
 		public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
@@ -17,14 +17,17 @@
  * parameter indicatorType: "SystemIndicator" : use system default indicator animate; "CustomIndicator" : use a CGPath indicator, you can edit CGPath in func "scrollBezierPath()"
 
 ### Adding pull to refresh
+```objective-c
 		tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
 	// prepend data to dataSource, insert cells at top of table view
     // call [tableView.pullToRefreshView stopAnimating] when done
   	}
+```
 
 ### Stop animating when done
+```objective-c
 	tableView.pullRefreshView?.stopPullRefreshAnimation() 
-
+```
 
 
 ###IndicatorType
@@ -35,15 +38,16 @@
  * CustomIndicator
 
 > use a CGPath indicator, you can rewrite CGPath in function: scrollBezierPath()
->
+>```objective-c
 >		func scrollBezierPath(progress: CGFloat) -> CGPath {
        // return a CGPath whatever you like
     }
-
+```
 ###other changeable property in code
+```objective-c
 		 //MARK: - define refresh view height -
 		private let PullRefreshViewHeight: CGFloat = 70
     	//MARK: - define lineWidth -
    	 let lineWidth: CGFloat = 2
-
+```
 
