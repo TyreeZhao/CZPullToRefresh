@@ -1,7 +1,7 @@
 # CZPullToRefresh
   These UIScrollView categories makes it super easy to add pull-to-refresh  to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing UIViewController, CZPullToRefresh uses the Objective-C runtime to add the following methods to UIScrollView:
   ```
-      <font color="red">public func</font> addpullToRefreshScrollWithHandler(topInsert: <font color="blue">CGFloat<\font> ,indicatorType: <font color="blue">IndicatorType</font>, actionHandler: <font color="blue">handler<\font>)
+      <font color = "red" >public func</font> addpullToRefreshScrollWithHandler(topInsert: <font color = "blue" >CGFloat<\font> ,indicatorType: <font color = "blue">IndicatorType</font>, actionHandler: <font color = "blue" >handler<\font>)
   ```
 # UIScrollView extension for pulling to refresh.
 ### Usage:
