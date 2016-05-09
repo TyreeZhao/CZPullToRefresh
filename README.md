@@ -19,8 +19,7 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 ### Adding pull to refresh
 
 ```swift
-	
-	tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
+	$yourtableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
 // prepend data to dataSource, insert cells at top of table view
 // call [tableView.pullToRefreshView stopAnimating] when done
 }
@@ -29,7 +28,7 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 
 ### Stop animating when done
 ```swift
-tableView.pullRefreshView?.stopPullRefreshAnimation() 
+	$yourtableView.pullRefreshView?.stopPullRefreshAnimation() 
 ```
 
 
@@ -49,9 +48,9 @@ tableView.pullRefreshView?.stopPullRefreshAnimation()
 ```
 ###other changeable property in code
 ```swift
-//MARK: - define refresh view height -
-private let PullRefreshViewHeight: CGFloat = 70
-//MARK: - define lineWidth -
-let lineWidth: CGFloat = 2
+	//MARK: - define refresh view height -
+	private let PullRefreshViewHeight: CGFloat = 70
+	//MARK: - define lineWidth -
+	let lineWidth: CGFloat = 2
 ```
 
