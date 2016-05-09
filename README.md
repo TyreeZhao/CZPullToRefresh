@@ -1,6 +1,6 @@
 # CZPullToRefresh
   These `UIScrollView` categories makes it super easy to add pull-to-refresh  to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing `UIViewController`, CZPullToRefresh uses the Objective-C runtime to add the following methods to` UIScrollView`:
-```objective-c
+```swift
 		public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
 #UIScrollView extension for pulling to refresh.
@@ -17,8 +17,8 @@
  * parameter indicatorType: "SystemIndicator" : use system default indicator animate; "CustomIndicator" : use a CGPath indicator, you can edit CGPath in func "scrollBezierPath()"
 
 ### Adding pull to refresh
-```objective-c
-		tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
+```swift
+	tableView.addpullToRefreshScrollWithHandler(topInsert, indicatorType: indicatorType) {
 	// prepend data to dataSource, insert cells at top of table view
     // call [tableView.pullToRefreshView stopAnimating] when done
   	}
