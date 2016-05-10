@@ -13,8 +13,8 @@ class CZViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //fake data source
-    var dataSource = [1, 2, 3, 4]
-    var fakeData: Int = 5
+    var dataSource = ["@Copyright CZPullToRefresh", "@Copyright CZPullToRefresh", "@Copyright CZPullToRefresh", "@Copyright CZPullToRefresh"]
+    var fakeData = "@Copyright CZPullToRefresh"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,7 +96,7 @@ extension CZViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pullCell", forIndexPath: indexPath)
-        cell.textLabel?.text = String(dataSource[indexPath.row])
+        cell.textLabel?.text = dataSource[indexPath.row]
         
         let green = arc4random_uniform(256)
         let red = arc4random_uniform(256)
