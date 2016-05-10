@@ -104,7 +104,6 @@ public class CZPullToRefreshScrollview: UIView {
     let lineWidth: CGFloat = 2
     private var progress: CGFloat = 0.0
     var isAnimation = false
-    var isRefreshing = false
     var scrollViewOriginContentTopInset: CGFloat = 0
     var scrollviewIndicatorType: IndicatorType = .SystemIndicator
     var shapLayer = CAShapeLayer()
@@ -180,7 +179,6 @@ public class CZPullToRefreshScrollview: UIView {
     }
     
     func beginRefresh() {
-        isRefreshing = true
         isAnimation = true
         
         guard let scrollview = scrollView else { return }
@@ -211,7 +209,6 @@ public class CZPullToRefreshScrollview: UIView {
     }
     
     func stopPullRefreshAnimation() {
-        isRefreshing = false
         delay(0.8) {
             self.activityIndicator.stopAnimating()
             self.state = .Stopped
