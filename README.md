@@ -44,7 +44,9 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 ###other changeable property in code
 ```swift
 	/**
-     	after addpullToRefreshScrollWithHandler function modified this prperty, use for transform the indicator centerY offset:
+     	after addpullToRefreshScrollWithHandler function modified this prperty, 
+     	use for transform the indicator centerY offset:(if needed)
+     	- default : 0
      	- parameter +: move down indicator
      	- parameter -: move up indicator
      	*/
