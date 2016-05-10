@@ -59,5 +59,5 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 	//MARK: - define lineWidth -
 	let lineWidth: CGFloat = 2
 ```
-<font color=#0099ff>**近期会经常维护github，任何问题随时交流**
-**如果你也喜欢这个Demo，请在右上角点个🌟，每一颗🌟都是我继续努力写出好的项目的动力！**</font>
+<font color=red>**近期会经常维护github，任何问题随时交流**</font>
+**如果你也喜欢这个Demo，请在右上角点个🌟，每一颗🌟都是我继续努力写出好的项目的动力！**
