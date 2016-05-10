@@ -13,7 +13,7 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
  * add func "stopPullRefreshAnimation" when update view forData
  * parameter handler: doing network request in handler
  * parameter topInsert: insert of tableview top.
- * parameter indicatorType: "SystemIndicator" : use system default indicator animate; "CustomIndicator" : use a CGPath indicator, you can edit CGPath in func "scrollBezierPath()"
+ * parameter indicatorType: "SystemIndicator" : use system default indicator animate; "CustomIndicator(indicatorParh: UIBezierPath)" : input a CGPath parameter
 
 ### Adding pull to refresh
 
@@ -36,17 +36,20 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
  
 > use system animation indicator when loading data.
 
- * CustomIndicator
+ * CustomIndicator(indicatorPath: UIBezierPath)
 
-> use a CGPath indicator, you can rewrite CGPath in function: scrollBezierPath()
+> input a UIBezierPath indicator, which you hope indicator present.
 
-```swift
-	func scrollBezierPath(progress: CGFloat) -> CGPath {
-       // return a CGPath whatever you like
-    }
-```
+
 ###other changeable property in code
 ```swift
+	/**
+     	property for transform the indicator centerY offset:
+     	- parameter +: move down indicator
+     	- parameter -: move up indicator
+     	*/
+	public var indicatorPositionYOffset: CGFloat = 0
+	
 	//MARK: - define refresh view height -
 	private let PullRefreshViewHeight: CGFloat = 70
 	//MARK: - define lineWidth -
