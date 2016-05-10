@@ -3,6 +3,7 @@
 ```swift
 public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
+![](http://ivansun123.b0.upaiyun.com/chaz/picCZPull1.gif!bac)
 
 ##Installation
  * Drag the CZPullToRefresh floder in your project
