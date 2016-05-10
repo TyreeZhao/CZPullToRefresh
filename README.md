@@ -60,6 +60,7 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 	let lineWidth: CGFloat = 2
 ```
 
+---
 __近期会经常维护github，任何问题随时交流__
 
 **如果你也喜欢这个Demo，请在右上角点个🌟，每一颗🌟都是我继续努力写出好的项目的动力！**
