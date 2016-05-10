@@ -62,11 +62,15 @@ extension UIScrollView: UIScrollViewDelegate {
 
 public class CZPullToRefreshView: UIView {
     /**
-     property for transform the indicator centerY offset:
+     after addpullToRefreshScrollWithHandler function modified this prperty, which use for transform the indicator centerY offset:
      - parameter +: move down indicator
      - parameter -: move up indicator
      */
-    public var indicatorPositionYOffset: CGFloat = 0
+    public var indicatorPositionYOffset: CGFloat = 0 {
+        didSet {
+            initViews()
+        }
+    }
     public var actionHandler: handler?
     
     public enum State {
@@ -112,7 +116,7 @@ public class CZPullToRefreshView: UIView {
     }
     
     //MARK: - define lineWidth -
-    let lineWidth: CGFloat = 2
+    let lineWidth: CGFloat = 4
     private var progress: CGFloat = 0.0
     var isAnimation = false
     var scrollViewOriginContentTopInset: CGFloat = 0
@@ -156,8 +160,9 @@ public class CZPullToRefreshView: UIView {
         case .CustomIndicator:
             shapLayer.anchorPoint = CGPointMake(0, 0)
             shapLayer.bounds = CGRectMake( 0 , 0, 100, 100)
-            shapLayer.position = CGPointMake(UIScreen.mainScreen().bounds.width / 2 - 10, positionY)
-            shapLayer.transform = CATransform3DMakeScale(0.2, 0.2, 1)
+            shapLayer.position = CGPointMake(UIScreen.mainScreen().bounds.width / 2 - 20, positionY)
+            shapLayer.masksToBounds = true
+            shapLayer.transform = CATransform3DMakeScale(0.4, 0.4, 1)
             layer.addSublayer(shapLayer)
         }
     }
