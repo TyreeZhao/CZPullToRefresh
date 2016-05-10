@@ -1,9 +1,10 @@
+![](http://ivansun123.b0.upaiyun.com/chaz/picCZPull1.gif!bac)
+---
 # CZPullToRefresh
   These `UIScrollView` categories makes it super easy to add pull-to-refresh  to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing `UIViewController`, CZPullToRefresh uses the Objective-C runtime to add the following methods to` UIScrollView`:
 ```swift
 public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
-![](http://ivansun123.b0.upaiyun.com/chaz/picCZPull1.gif!bac)
 
 ##Installation
  * Drag the CZPullToRefresh floder in your project
