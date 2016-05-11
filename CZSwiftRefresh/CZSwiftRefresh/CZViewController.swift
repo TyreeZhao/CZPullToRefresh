@@ -21,8 +21,8 @@ class CZViewController: UIViewController {
         tableView.addpullToRefreshScrollWithHandler(0, indicatorType: IndicatorType.CustomIndicator(indicatorPath: path())) {
             self.networkRequest()
         }
+        //添加完下拉刷新后, 修改indicatorPositionYOffset属性，可调整菊花的位置
         tableView.pullRefreshView?.indicatorPositionYOffset = -10
-
     }
     
     func networkRequest(){
