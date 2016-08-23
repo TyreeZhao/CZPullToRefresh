@@ -62,5 +62,3 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 
 ---
 __个人博客[http://lukastong.github.io/](http://lukastong.github.io/)__
-
-**如果你也喜欢这个Demo，请在右上角点个🌟，每一颗🌟都是我继续努力写出好的项目的动力！**
