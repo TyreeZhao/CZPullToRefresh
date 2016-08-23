@@ -6,7 +6,7 @@
 public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType: IndicatorType, actionHandler: handler)
 ```
 
-##Installation
+## Installation
  * Drag the CZPullToRefresh floder in your project
  * that's all, so easy isn't it?!
 
@@ -43,7 +43,7 @@ public func addpullToRefreshScrollWithHandler(topInsert: CGFloat ,indicatorType:
 > input a UIBezierPath indicator, which you hope indicator present.
 
 
-###other changeable property in code
+### other changeable property in code
 ```swift
 	/**
      	after addpullToRefreshScrollWithHandler function modified this prperty, 
